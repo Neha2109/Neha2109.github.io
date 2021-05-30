@@ -1,0 +1,115 @@
+#aaa {
+  font-size: 10px;
+}
+#ccc {
+  font-size: 10px;
+}
+
+#hhh {
+  transform: translate(-20%, 0);
+}
+#iii {
+  width: 150px;
+  height: 200px;
+}
+#contact h1 {
+  font-size: 1.4rem;
+  text-align: center;
+}
+#contact-form {
+  padding: 2px !important;
+  height: 22cm !important;
+  box-sizing: border-box;
+  background-color: ivory;
+}
+#contact-form form {
+  flex-direction: column;
+  height: 16cm !important;
+  padding: 20px !important;
+  width: 90% !important;
+}
+.contact-right,
+.contact-left {
+  width: 100%;
+  border: none;
+}
+.f-email,
+.f-name {
+  width: 100%;
+}
+.f-email input,
+.f-name input {
+  width: 100%;
+  border: none;
+  background-color: #262626 !important;
+  padding: 10px;
+  box-sizing: border-box;
+  height: 40px;
+}
+textarea {
+  background-color: #262626 !important;
+  margin: 10px 0px;
+  padding: 10px;
+  height: 200px !important;
+  width: 100% !important;
+}
+.message {
+  margin: 0px !important;
+}
+.contact-form form h1 {
+  margin: 5px 0px;
+}
+section.about .about-me-image {
+  width: 100px;
+  height: 100px;
+}
+
+#xxx {
+  font-size: 1rem !important;
+  margin: 0px;
+  padding: 0px;
+  letter-spacing: 0px !important;
+  border-bottom: 2px solid #1e1e1e;
+  font-family: Calibri;
+}
+#qqq {
+  font-size: 0.7rem !important;
+  letter-spacing: 0px !important;
+}
+#bbb {
+  font-size: 20px;
+}
+#zzz {
+  font-size: 0.8rem;
+}
+#ab {
+  font-size: 1.5rem;
+}
+#bc {
+  font-size: 1rem;
+}
+#cd {
+  font-size: 1rem;
+}
+#contact h1 {
+  margin: 2px !important;
+  padding: 2px !important;
+  border-bottom: 1px solid #1e1e1e !important;
+}
+#contact p {
+  margin: 2px !important;
+  padding: 2px !important;
+}
+#contact {
+  margin: 2px 0px !important;
+  background-color: ivory;
+  box-shadow: 2px 0px 20px rgba(0, 0, 0, 0.4) !important;
+}
+#contact a {
+  width: 100px !important;
+  height: 40px !important;
+  margin: 2px !important;
+}
+body {
+  background-color: red !important;
+}
