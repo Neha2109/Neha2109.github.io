@@ -156,6 +156,7 @@ nav ul {
     overflow-y: hidden;
     top: 50px;
     left: 0px;
+    z-index: 2;
   }
   .nav > .nav-links > a {
     display: block;
