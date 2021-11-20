@@ -15,33 +15,37 @@
     </head>
     <body>
         <section id="main">
-          <div class="topnav" id="myTopnav">
-            <a href="#home" class="active" style="font-family: poppins; color: #000000;font-weight: bold;">My Portfolio</a>
-            <a href="#main">Home</a>
-            <a href="#about">About</a>
-            <a href="#skill">Skills</a>
-            <a href="#project">Project</a>
-            <a href="#contact">Contact</a>
-            <a href="#social">Social</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+          <div class="nav">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-header" style="margin-top: 10px;">
+              <div class="nav-title" style="color: black; font-weight: bold; background-color: #17d1ac; margin: 5px; margin-bottom:5px;">
+                My Portfolio
+              </div>
+            </div>
+            <div class="nav-btn">
+              <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+            </div>
+            
+            <div class="nav-links" style="color: black; font-weight: bold;">
+              <a href="#main" target="_blank">Home</a>
+              <a href="#about" target="_blank">About</a>
+              <a href="#skill" target="_blank">Skills</a>
+              <a href="#project" target="_blank">Projects</a>
+              <a href="#contact" target="_blank">Contact</a>
+              <a href="#social" target="_blank">Social</a>
+            </div>
           </div>
-          <script>
-            function myFunction() {
-              var x = document.getElementById("myTopnav");
-              if (x.className === "topnav") {
-                x.className += " responsive";
-              } else {
-                x.className = "topnav";
-              }
-            }
-            </script>
           <!----text------------------------->
           <div class="text-container" id="hhh">
               <p id="aaa">Heyaa.....!!!!</p>
               <h1 id="bbb">I'M <font color="#17d1ac">NEHA</font> PORWAL</h1>
-              <p class="details" id="ccc">CSE Student at<br> Indian Institute of Information Technology , Dharwad</p>
+              <p class="details" id="ccc">B.Tech CSE Student at<br> Indian Institute of Information Technology, Dharwad</p>
               <button class="hire-btn" id="ddd" ><a href="https://wa.me/9821513801" style="color: black;">Whatsapp</a></button>
-              <button class="down-cv" id="ddd"><a href="tel:9821513801">Download CV</a></button>
+              <button class="down-cv" id="ddd"><a href="tel:9821513801">Call Me</a></button>
           </div>
           <!--model----------------->
           <img src = "images/20210304_161614.png" class="model" alt="model" id="iii"> 

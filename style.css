@@ -77,95 +77,96 @@ nav ul {
   transition: all ease 0.4s;
 }**/
 /* Add a black background color to the top navigation */
-.topnav {
-  background-color: #f4f7ff;
-  overflow: hidden;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: 2px;
-  font-family: calibri;
-
-  top: 0;
-  left: 0;
+.nav {
+  height: 50px;
   width: 100%;
-  box-sizing: border-box;
-  height: 60px;
+  background-color: #f4f7ff;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.05);
-  padding: 10px 10px;
-  z-index: 1;
+  position: relative;
 }
 
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  display: block;
-  color: #505050;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+.nav > .nav-header {
+  display: inline;
 }
 
-/* Add an active class to highlight the current page */
-.active {
-  background-color: #17d1ac;
-  color: white;
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
 }
 
-/* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
+.nav > .nav-btn {
   display: none;
 }
 
-/* Add a dark background on topnav links and the dropdown button on hover */
-.topnav a:hover,
-.dropdown:hover .dropbtn {
-  background-color: #292929;
-  color: #ffffff !important;
-  font-weight: 700;
-  transition: all ease 0.4s;
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
 }
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child),
-  .dropdown .dropbtn {
-    display: none;
-  }
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: black;
+  margin-right: 30px;
 }
 
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
-  .topnav.responsive {
-    position: relative;
-  }
-  .topnav.responsive a.icon {
+.nav > .nav-links > a:hover {
+  background-color: #17d1ac;
+  margin-top: 2px;
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .nav > .nav-btn {
+    display: inline-block;
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 0px;
+    top: 0px;
   }
-  .topnav.responsive a {
-    float: none;
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,
+  .nav #nav-check:checked ~ .nav-btn > label {
+    background-color: #f4f7ff;
+  }
+  .nav > .nav-btn > label > span {
     display: block;
-    text-align: left;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid black;
   }
-  .topnav.responsive .dropdown {
-    float: none;
-  }
-  .topnav.responsive .dropdown-content {
-    position: relative;
-  }
-  .topnav.responsive .dropdown .dropbtn {
+  .nav > .nav-links {
+    position: absolute;
     display: block;
     width: 100%;
-    text-align: left;
+    background-color: #f4f7ff;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
   }
 }
 .text-container {
